@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main_div">
+        <div id="display"></div>
+        <div class="second_stage">
+            <div class="first_part">
+                <div class="first_part_1">
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="deleteLast()"><i style="transform: rotate(180deg);" class="fa-solid fa-delete-left"></i></button>
+                    <button onclick="appendCharacter('7')">7</button>
+                    <button onclick="appendCharacter('8')">8</button>
+                    <button onclick="appendCharacter('4')">4</button>
+                    <button onclick="appendCharacter('5')">5</button>
+                    <button onclick="appendCharacter('1')">1</button>
+                    <button onclick="appendCharacter('2')">2</button>
+                </div>
+                <button class="zero_button"  onclick="appendCharacter('0')">0</button>
+            </div>
+            <div class="second_part">
+                <div class="second_part_1">
+                    <button onclick="appendCharacter('÷')">÷</button>
+                    <button  onclick="appendCharacter('×')">x</button>
+                    <button onclick="appendCharacter('9')">9</button>
+                    <button onclick="appendCharacter('-')">-</button>
+                    <button onclick="appendCharacter('6')">6</button>
+                    <button onclick="appendCharacter('+')">+</button>
+                </div>
+                <div class="second_part_2">
+                    <div class="part_1">
+                        <button onclick="appendCharacter('3')">3</button>
+                        <button  onclick="appendCharacter('.')">.</button>
+                    </div>
+                    <div class="part_2">
+                        <button  onclick="calculate()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
